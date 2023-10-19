@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Popup and Data Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <button id="openPopup">Add new address</button>
+
+    <div class="popup" id="formPopup">
+        <h2>form</h2>
+        <form id="dataForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="fatherName">fatherName:</label>
+            <input type="text" id="Father" required><br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="Date" required><br><br>
+
+            <label for="Address">Address:</label>
+            <input type="text" id="address" required><br><br>
+
+
+            <label for="district">District:</label>
+            <input type="text" id="District" required><br><br>
+
+            <label for="pin">Pin Code:</label>
+            <input type="number" id="pin" required><br><br>
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <table id="dataTable" border="1">
+        <tr>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>Name</th>
+            <th>fatherName</th>
+            <th>Date of Birth</th>
+            <th>Address</th>
+            <th>District</th>
+            <th>Pin code</th>
+        </tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./edit.js"></script>
+</body>
+
+</html>
